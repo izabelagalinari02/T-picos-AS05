@@ -86,11 +86,11 @@ def main():
         handle_userinput(user_question)
 #-------------------------------------------------------------------------------------------------------------------------- Processamento dos PDFs
     with st.sidebar:
-        st.subheader("Your documents")
+        st.subheader("Importação de Documentos")
         pdf_docs = st.file_uploader(
-            "Upload your PDFs here and click on 'Process'", accept_multiple_files=True)
-        if st.button("Process"):
-            with st.spinner("Processing"):
+            "Envie seus PDFs aqui e clique em 'Processar'", accept_multiple_files=True)
+        if st.button("Processar"):
+            with st.spinner("Processando..."):
                 raw_text = get_pdf_text(pdf_docs)
                 text_chunks = get_text_chunks(raw_text)
                 vectorstore = get_vectorstore(text_chunks)
