@@ -81,7 +81,7 @@ def main():
     st.header(':blue[Talking com PDFs] :books:')
     st.text("Tópicos em Computação III - Text Mining\nProf.: Dr. Wladmir Cardoso Brandão\nAluno: Hernane Velozo Rosa\n")
     st.text("Este é um assistente baseado em LLM capaz de indexar vetores de uma coleção de \ndocumentos PDF que responde perguntas feitas através.")
-    user_question = st.text_input("Ask a question about your documents:")
+    user_question = st.text_input("Faça uma pergunta sobre o(s) arquivo(s) enviado(s):")
     if user_question:
         handle_userinput(user_question)
 #-------------------------------------------------------------------------------------------------------------------------- Processamento dos PDFs
