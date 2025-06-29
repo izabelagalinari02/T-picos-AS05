@@ -66,11 +66,6 @@ Este aplicativo Streamlit permite que você converse com seus documentos PDF usa
 * **Modelo de Embeddings:** Explore outros modelos de embeddings (por exemplo, Hugging Face) na função `get_vectorstore`.
 * **LLM:** Experimente diferentes LLMs (por exemplo, Hugging Face Hub) na função `get_conversation_chain`.
 
-## Créditos
-Tópicos em Computação III - Text Mining\
-Prof.: Dr. Wladmir Cardoso Brandão\
-Aluno: Hernane Velozo Rosa
-
 ## Aviso Legal
 
 Este aplicativo é para fins educacionais e demonstrativos. A qualidade das respostas depende da qualidade de seus documentos e das capacidades do LLM. 
