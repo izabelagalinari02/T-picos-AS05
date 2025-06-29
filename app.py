@@ -1,4 +1,3 @@
-# Hernane Velozo @ 29/06/2024
 
 #-------------------------------------------------------------------------------------------------------------------------- Extração dados do PDFs
 import streamlit as st
@@ -20,7 +19,6 @@ def get_pdf_text(pdf_docs):
         for page in pdf_reader.pages:
             text += page.extract_text()
     return text
-
 
 #-------------------------------------------------------------------------------------------------------------------------- Demais funcionis e instancia OpenAI API Key
 def get_text_chunks(text):
@@ -80,7 +78,6 @@ def main():
     st.title("PUC MINAS")  # Adicionando o título
     st.header('Engenharia de Computação | 1/2024')
     st.header(':blue[Talking com PDFs] :books:')
-    st.text("Tópicos em Computação III - Text Mining\nProf.: Dr. Wladmir Cardoso Brandão\nAluno: Hernane Velozo Rosa\n")
     st.text("Este é um assistente baseado em LLM capaz de indexar vetores de uma coleção de \ndocumentos PDF que responde perguntas feitas através.")
     user_question = st.text_input("Faça uma pergunta sobre o(s) arquivo(s) enviado(s):")
     if user_question:
