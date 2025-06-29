@@ -21,6 +21,7 @@ def get_pdf_text(pdf_docs):
             text += page.extract_text()
     return text
 
+
 #-------------------------------------------------------------------------------------------------------------------------- Demais funcionis e instancia OpenAI API Key
 def get_text_chunks(text):
     text_splitter = CharacterTextSplitter(
